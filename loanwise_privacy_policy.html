@@ -46,6 +46,13 @@
   ul { padding-left: 20px; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  .highlight {
+    background: #eff6ff;
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 16px 0;
+  }
   footer {
     margin-top: 48px;
     padding-top: 24px;
@@ -64,79 +71,98 @@
     </header>
 
     <p>
-      This Privacy Policy describes how <strong>LoanWise</strong> ("we", "our", or "the app")
-      collects, uses, and protects your information when you use our mobile application.
-      By using LoanWise, you agree to the terms described below.
+      This Privacy Policy explains how <strong>LoanWise</strong> ("we", "our", or "the app")
+      handles information when you use our mobile application. By using LoanWise,
+      you agree to the practices described below.
     </p>
 
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li><strong>Account information</strong> you provide during sign-up (e.g., name, email, phone number).</li>
-      <li><strong>Loan data</strong> you enter into the app (principal amounts, interest rates, repayment schedules, borrower or lender names).</li>
-      <li><strong>Device information</strong> such as device model, OS version, and crash diagnostics.</li>
-      <li><strong>Usage analytics</strong> to help us understand how the app is used and improve it.</li>
-    </ul>
+    <div class="highlight">
+      <strong>Summary:</strong> LoanWise does not require an account or sign-up.
+      All your loan data is stored <strong>locally on your device</strong>. We do not
+      sell your data, and we do not collect your advertising ID.
+    </div>
 
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-      <li>To provide and maintain the core loan-management features of the app.</li>
-      <li>To sync your data securely across your devices (if cloud sync is enabled).</li>
-      <li>To send important notifications about loan reminders and due dates.</li>
-      <li>To diagnose technical issues and improve app stability and performance.</li>
-    </ul>
-
-    <h2>3. Data Storage and Security</h2>
+    <h2>1. Information You Enter (Stored Locally)</h2>
     <p>
-      Your data is stored securely using industry-standard encryption.
-      Cloud-synced data is hosted on Google Firebase, which complies with major
-      security standards. We do not sell, rent, or trade your personal data
-      to any third party.
+      Any loan information you add — including principal, interest rate, tenure,
+      EMI schedules, prepayments, disbursement details, and any names or notes —
+      is stored <strong>only on your device</strong> using a local database (Hive).
+      This data is not transmitted to our servers, and we cannot access it.
     </p>
 
-    <h2>4. Third-Party Services</h2>
-    <p>LoanWise uses the following third-party services:</p>
+    <h2>2. Information Collected Automatically</h2>
+    <p>The app uses third-party SDKs that collect limited, non-personal data:</p>
     <ul>
-      <li><strong>Firebase</strong> (Authentication, Firestore, Crashlytics, Analytics) – Google LLC</li>
-      <li><strong>Google Play Services</strong> – Google LLC</li>
+      <li><strong>Firebase Crashlytics</strong> – crash logs, stack traces, device model,
+        OS version, and app state at the time of a crash. Used to diagnose and fix bugs.</li>
+      <li><strong>Firebase Analytics</strong> – aggregated, anonymous usage events such as
+        screen views and feature interactions. Used to improve the app.
+        We <strong>do not</strong> collect the Android Advertising ID (AD_ID is explicitly disabled).</li>
+      <li><strong>Google AdMob</strong> – serves ads in the app and may use limited
+        device identifiers as described in
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's Partner Policy</a>.</li>
+    </ul>
+
+    <h2>3. How We Use Information</h2>
+    <ul>
+      <li>To run the core loan-management features entirely on your device.</li>
+      <li>To diagnose crashes and improve app stability (Crashlytics).</li>
+      <li>To understand which features are used (Analytics, in aggregate only).</li>
+      <li>To display ads that help keep the app free (AdMob).</li>
+    </ul>
+
+    <h2>4. Permissions We Request</h2>
+    <ul>
+      <li><strong>Internet</strong> – required for Firebase services and ad delivery.</li>
+      <li><strong>Notifications</strong> – to show EMI reminders and due-date alerts on your device.</li>
+      <li><strong>Schedule Exact Alarm / Wake Lock / Receive Boot Completed</strong> –
+        to ensure scheduled reminders fire reliably and survive device restarts.</li>
+      <li><strong>Vibrate</strong> – for notification feedback.</li>
+      <li><strong>Storage (via file picker)</strong> – only when you choose to export
+        a PDF/CSV report or back up/restore your data.</li>
     </ul>
     <p>
-      These services may collect information used to identify you, in accordance with
-      their respective privacy policies.
+      All notifications are generated locally on your device. We do not send push notifications
+      from a server.
     </p>
 
-    <h2>5. Permissions We Use</h2>
-    <ul>
-      <li><strong>Internet</strong> – to sync your data and connect to our backend services.</li>
-      <li><strong>Notifications</strong> – to send loan reminders and important alerts.</li>
-      <li><strong>Storage</strong> – to back up or export your loan data when requested.</li>
-    </ul>
+    <h2>5. Data Sharing</h2>
+    <p>
+      We do not sell, rent, or share your personal information with third parties for marketing.
+      The only data leaving your device is the diagnostic/analytics/ads data described in Section 2,
+      delivered to Google services that power those features.
+    </p>
 
-    <h2>6. Your Rights</h2>
+    <h2>6. Data Retention &amp; Deletion</h2>
     <ul>
-      <li>You may access, update, or delete your account data at any time from within the app.</li>
-      <li>You may request permanent deletion of your account and associated data by contacting us.</li>
-      <li>You may opt out of analytics and non-essential data collection from app settings.</li>
+      <li>Loan data lives on your device. Uninstalling the app or clearing its storage
+        removes all loan data permanently.</li>
+      <li>Crash and analytics data retained by Google follows Firebase's standard retention policies.</li>
     </ul>
 
     <h2>7. Children's Privacy</h2>
     <p>
-      LoanWise is not intended for children under 13. We do not knowingly collect
-      personal information from children. If you believe a child has provided us with
-      personal data, please contact us to have it removed.
+      LoanWise is not directed to children under 13 and does not knowingly collect
+      personal data from children.
     </p>
 
-    <h2>8. Changes to This Policy</h2>
+    <h2>8. Third-Party Services</h2>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> (Crashlytics, Analytics) – Google LLC</li>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob</a> – Google LLC</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a> – Google LLC</li>
+    </ul>
+
+    <h2>9. Changes to This Policy</h2>
     <p>
-      We may update this Privacy Policy from time to time. Any changes will be posted
-      on this page with an updated revision date. Continued use of the app after
-      changes are posted constitutes acceptance of the revised policy.
+      We may update this Privacy Policy as the app evolves. The "Last updated" date
+      at the top will reflect any revision. Continued use of the app after changes
+      constitutes acceptance of the updated policy.
     </p>
 
-    <h2>9. Contact Us</h2>
+    <h2>10. Contact Us</h2>
     <p>
-      If you have any questions or requests regarding this Privacy Policy, contact us at:
-      <br />
-
+      Questions or requests regarding this Privacy Policy contact us.
     </p>
 
     <footer>
