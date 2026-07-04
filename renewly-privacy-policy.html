@@ -45,6 +45,7 @@
     p, li { color: var(--muted); font-size: 15px; }
     ul { margin: 8px 0 0 20px; }
     li { margin-bottom: 6px; }
+    a { color: var(--accent); }
     .highlight {
       background: #EBF2FA; border-left: 4px solid var(--accent);
       padding: 14px 18px; border-radius: 12px; margin-top: 12px;
@@ -63,78 +64,128 @@
 
   <div class="container">
     <div class="card">
-      <h2><span class="icon">🔒</span>Privacy First, Always</h2>
+      <h2><span class="icon">🔒</span>Your Data Stays on Your Device</h2>
       <p>
-        Renewly is designed to be <strong>100% offline</strong> and
-        <strong>privacy-first</strong>. Your data never leaves your device.
-        There is no account, no cloud, and no tracking — ever.
+        Renewly is built to be <strong>privacy-first</strong>. All of the
+        information you enter — your records, documents, medicines, warranties,
+        vehicles and reminders — is stored <strong>only on your device</strong>.
+        There is no account and no cloud sync. We (the developer) never receive,
+        store, or sell your personal records.
       </p>
       <div class="highlight">
-        We do not collect, store, transmit, share, or sell any personal
-        information. All processing happens entirely on your device.
+        The one exception is advertising: Renewly displays ads through Google
+        AdMob, which requires an internet connection and collects limited
+        device data as described below. Your personal renewal data is never
+        used for or shared with advertising.
       </div>
     </div>
 
     <div class="card">
       <h2><span class="icon">💾</span>Data Storage</h2>
       <p>
-        All your records, documents, medicines, warranties, vehicles and
-        reminders are stored locally on your device using encrypted local
-        storage (Hive). You are in full control of your data at all times.
+        All your records and attachments are stored locally on your device
+        using on-device storage (Hive). You are in full control of your data
+        at all times.
       </p>
       <ul>
-        <li>No servers are involved.</li>
+        <li>We operate no servers and receive none of your records.</li>
         <li>No cloud backup is performed automatically.</li>
         <li>Backups you create are saved as local files that only you control.</li>
-        <li>Uninstalling the app permanently removes all stored data.</li>
+        <li>Uninstalling the app permanently removes all data you stored in it.</li>
       </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📣</span>Advertising (Google AdMob)</h2>
+      <p>
+        Renewly is free and supported by ads served through
+        <strong>Google AdMob</strong>. To show ads, Google and its partners may
+        collect and process certain data on our behalf, including:
+      </p>
+      <ul>
+        <li>Device advertising identifier (Advertising ID) and general device information.</li>
+        <li>Approximate, IP-based location and coarse region.</li>
+        <li>Ad interaction data (ads shown, taps) used to serve and measure ads and limit repetition.</li>
+      </ul>
+      <p style="margin-top:10px;">
+        This data is collected by Google, not by us, and is governed by
+        Google's own privacy policy:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+        You can learn how Google uses data from apps that use its services at
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.
+      </p>
+      <div class="highlight">
+        <strong>Your choices:</strong> Where required (for example in the EEA,
+        UK and Switzerland), Renewly shows a consent prompt before serving
+        personalized ads. You can also reset or delete your Advertising ID, and
+        opt out of ad personalization, in your device settings
+        (Android: Settings → Google → Ads; iOS: Settings → Privacy → Tracking).
+      </div>
     </div>
 
     <div class="card">
       <h2><span class="icon">🛡️</span>Permissions</h2>
-      <p>Renewly requests only the minimum permissions needed, and all are optional:</p>
+      <p>Renewly requests only the permissions it needs:</p>
       <ul>
-        <li><strong>Camera</strong> — used only to scan documents you choose to capture for OCR.</li>
-        <li><strong>Media / Photos</strong> — used only to attach images you explicitly select.</li>
-        <li><strong>Notifications</strong> — used only to remind you locally before renewals expire.</li>
-        <li><strong>Biometric</strong> — used only to unlock the app if you enable App Lock.</li>
+        <li><strong>Internet</strong> — used only to load ads via Google AdMob. Your records are never sent over the internet.</li>
+        <li><strong>Advertising ID</strong> — used by Google AdMob to serve and measure ads.</li>
+        <li><strong>Camera</strong> (optional) — used only to scan documents you choose to capture for OCR.</li>
+        <li><strong>Media / Photos</strong> (optional) — used only to attach images you explicitly select.</li>
+        <li><strong>Notifications</strong> (optional) — used only to remind you locally before renewals expire.</li>
+        <li><strong>Biometric</strong> (optional) — used only to unlock the app if you enable App Lock.</li>
       </ul>
       <p style="margin-top:10px;">
-        Renewly does <strong>not</strong> request access to your location,
-        contacts, SMS, microphone, or phone.
+        Renewly does <strong>not</strong> request access to your precise
+        location, contacts, SMS, microphone, or phone.
       </p>
     </div>
 
     <div class="card">
-      <h2><span class="icon">📊</span>No Analytics or Ads</h2>
+      <h2><span class="icon">📊</span>Analytics</h2>
       <p>
-        Renewly contains no analytics SDKs, no advertising, and no third-party
-        trackers. The app is completely free with unlimited usage and no
-        premium tiers.
+        Renewly includes no separate analytics SDKs or third-party trackers
+        beyond the advertising services described above. The app is completely
+        free with unlimited usage and no premium tiers.
       </p>
     </div>
 
     <div class="card">
       <h2><span class="icon">👶</span>Children's Privacy</h2>
       <p>
-        Renewly does not knowingly collect any information from anyone,
-        including children, because it does not collect information at all.
+        Renewly is not directed to children under 13 (or the equivalent minimum
+        age in your country). We do not knowingly collect personal information
+        from children. Because the app serves ads through Google AdMob, please
+        do not allow children to use it without supervision. If you believe a
+        child has provided information through the ad services, contact us so it
+        can be addressed.
       </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔗</span>Third-Party Services</h2>
+      <p>
+        Renewly relies on the following third-party service, which has its own
+        privacy policy:
+      </p>
+      <ul>
+        <li>Google AdMob — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      </ul>
     </div>
 
     <div class="card">
       <h2><span class="icon">✉️</span>Contact</h2>
       <p>
-        If you have any questions about this privacy policy, you can contact
-        the developer through the app store listing for Renewly.
+        If you have any questions about this privacy policy or wish to make a
+        data request, you can contact the developer through the app store
+        listing for Renewly.
       </p>
     </div>
 
-    <p class="updated">Last updated: 2025</p>
+    <p class="updated">Last updated: July 2026</p>
   </div>
 
   <footer>
-    © Renewly · com.dev.renewly · 100% Offline · No Tracking
+    © Renewly · com.dev.renewly · Your records stay on your device · Ads by Google AdMob
   </footer>
 </body>
 </html>
