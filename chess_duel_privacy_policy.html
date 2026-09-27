@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Chess Duel</title>
+<meta name="description" content="Privacy Policy for the Chess Duel mobile game.">
+<style>
+  :root {
+    --bg: #f1f0f7;
+    --card: #fbfbfe;
+    --ink: #181b2e;
+    --dim: #676d8c;
+    --accent: #5b3fe0;
+    --good: #169a6a;
+    --line: #d9d8e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0f1d;
+      --card: #141930;
+      --ink: #eef0fa;
+      --dim: #99a0c2;
+      --accent: #9f86ff;
+      --good: #2ee6a6;
+      --line: #2a3257;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 24px 16px 64px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 36px 32px;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; letter-spacing: -0.5px; }
+  .meta { color: var(--dim); font-size: 0.95rem; margin-bottom: 28px; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 30px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  p, li { color: var(--ink); margin-bottom: 10px; }
+  ul { padding-left: 22px; margin-bottom: 10px; }
+  a { color: var(--accent); word-break: break-word; }
+  strong { font-weight: 700; }
+  .lede {
+    padding: 16px 18px;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 9%, transparent);
+    margin-bottom: 8px;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  .scroll { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 10px;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--dim); font-weight: 600; font-size: 0.85rem;
+       text-transform: uppercase; letter-spacing: 0.5px; }
+  td.yes { color: var(--accent); font-weight: 700; white-space: nowrap; }
+  td.no { color: var(--good); font-weight: 700; white-space: nowrap; }
+  .contact {
+    margin-top: 30px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  @media (max-width: 520px) {
+    .wrap { padding: 26px 20px; border-radius: 14px; }
+    h1 { font-size: 1.55rem; }
+    table { font-size: 0.88rem; }
+    th, td { padding: 8px 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Chess Duel &middot; Last updated: September 27, 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version:</strong> Chess Duel has no in-app
+    purchases and no email or password sign-up. You pick a display name, and
+    your progress is saved on your device. To make online play possible, we
+    keep a small profile in Google Firebase: your display name, your online
+    rating and record, a scrambled identifier for your device, and the online
+    games you play. We never sell it, and you can delete it from inside the
+    App at any time. The App is free because it shows ads from
+    <strong>Google AdMob</strong>. Google collects some device information to
+    deliver them (see Section 5), and you can control that.</p>
+  </div>
+
+  <p>This Privacy Policy explains how the mobile game <strong>Chess
+  Duel</strong> ("the App", "we", "us") handles information when you use
+  it.</p>
+
+  <h2>1. Information We Collect</h2>
+  <p>We collect only what the App needs to work. We do <strong>not</strong>
+  ask for your real name, email address, phone number, contacts, location,
+  photos, files, microphone or camera.</p>
+  <div class="scroll">
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it is kept</th></tr>
+    <tr><td><strong>Display name</strong>: the name you type when you first open the App. It can be anything and does not need to be your real name.</td>
+        <td>Shown to you, and to opponents in online games</td>
+        <td>Your device, and Firebase if the App is online</td></tr>
+    <tr><td><strong>Device key</strong>: a one-way, salted hash of your device's system identifier (Android ID on Android; an app-specific identifier kept in the Keychain on iOS)</td>
+        <td>Recognising your device so your name and rating come back after a reinstall, without an account</td>
+        <td>Your device, and Firebase</td></tr>
+    <tr><td><strong>Anonymous sign-in ID</strong>: a random ID issued by Firebase Authentication</td>
+        <td>Letting the server check that only you can move your pieces or change your profile</td>
+        <td>Firebase</td></tr>
+    <tr><td><strong>Online profile</strong>: online rating, wins, losses and draws</td>
+        <td>Matchmaking and showing your rank</td>
+        <td>Firebase</td></tr>
+    <tr><td><strong>Online games</strong>: the moves played, both players' display names and ratings, the result, draw offers, preset emotes, and "last seen" timestamps</td>
+        <td>Playing the game live, and detecting when a player has left</td>
+        <td>Firebase</td></tr>
+  </table>
+  </div>
+  <p>The raw device identifier never leaves your device. Only the hash
+  (the device key) is sent, and it cannot be turned back into the original
+  identifier.</p>
+
+  <h2>2. What the App Stores Only on Your Device</h2>
+  <p>So you can pick up where you left off, the App saves the following in
+  your device's standard app storage. It is not sent to us.</p>
+  <ul>
+    <li>Journey stars, coins, XP and level</li>
+    <li>Puzzle progress, puzzle rating and solve streaks</li>
+    <li>Daily reward calendar and daily play streak</li>
+    <li>Board themes you own and the one you use</li>
+    <li>A game against the computer that you have not finished</li>
+    <li>Settings: sound, vibration, legal-move dots and board coordinates</li>
+  </ul>
+  <p>Journey, puzzles and Pass &amp; Play work fully offline and send
+  nothing over the network.</p>
+
+  <h2>3. Online Play and Google Firebase</h2>
+  <p>Online features use two Google Firebase services:
+  <strong>Firebase Authentication</strong> (anonymous sign-in only) and
+  <strong>Cloud Firestore</strong> (the database for profiles and games).
+  When the App connects, it creates or refreshes your profile, even if you
+  do not start an online game, so your name and rating are ready when you
+  do. Google processes this data on our behalf as a service provider. As
+  with any internet service, Google's servers also receive technical data
+  such as your IP address in order to deliver the service.</p>
+  <p>See the <a href="https://firebase.google.com/support/privacy">Firebase
+  Privacy and Security</a> page and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>All traffic between the App and Firebase is encrypted in transit (TLS).
+  Server security rules make sure only you can change your profile, only
+  the players in a game can move in it, and nobody can browse the list of
+  player profiles.</p>
+
+  <h2>4. What Other Players Can See</h2>
+  <p>In an online game, your opponent sees your <strong>display name</strong>,
+  your <strong>online rating</strong>, your moves and any preset emotes you
+  send. There is no free-text chat. Other players cannot see your device
+  key, and they cannot look up your profile.</p>
+  <p>Please do not use your real full name, or anything else that
+  identifies you, as your display name.</p>
+
+  <h2>5. Advertising (Google AdMob)</h2>
+  <p>The App shows ads served by <strong>Google AdMob</strong>. To deliver,
+  measure and protect ads from fraud, Google may automatically collect
+  from your device:</p>
+  <ul>
+    <li>the Advertising ID (a resettable identifier)</li>
+    <li>your IP address, and an approximate location derived from it</li>
+    <li>device information such as model, operating system and language</li>
+    <li>ad interactions such as views, clicks and completed rewarded videos,
+    plus diagnostic data about ad performance</li>
+  </ul>
+  <p>Google collects this under its own policies; we never receive it. See
+  <a href="https://policies.google.com/technologies/partner-sites">How Google
+  uses information from sites or apps that use its services</a>
+  and the <a href="https://policies.google.com/privacy">Google Privacy
+  Policy</a>. We do not send your display name, device key or games to the
+  advertising SDK.</p>
+  <p>Ads appear in these places only:</p>
+  <ul>
+    <li>A <strong>banner</strong> at the bottom of menu screens (home,
+    Journey map, shop and online lobby). There is never a banner beside a
+    board while you play.</li>
+    <li>An occasional <strong>full-screen ad</strong> after you finish a game
+    or several puzzles and choose to move on. Never in the middle of a game,
+    never between losing and pressing "Try again", and never before a
+    rematch.</li>
+    <li>An optional <strong>rewarded video</strong> that you choose to watch
+    for bonus coins: to double the coins from a win or draw, or for free
+    coins in the shop (a few times per day). Nothing in the game requires
+    watching one.</li>
+  </ul>
+  <p><strong>Consent (EEA, UK and Switzerland):</strong> before any ad is
+  requested, the App asks for your consent through Google's User Messaging
+  Platform where the law requires it. You can change your answer later in
+  <strong>Settings &rarr; Ad privacy options</strong>.</p>
+  <p><strong>Personalised ads elsewhere:</strong> you can opt out on your
+  device at <strong>Settings &rarr; Google &rarr; Ads &rarr; Delete
+  advertising ID</strong> (Android), or turn off <strong>Allow Apps to Request
+  to Track</strong> (iOS).</p>
+
+  <h3 style="margin-top:18px">What we do not do</h3>
+  <ul>
+    <li>No in-app purchases or payment data.</li>
+    <li>No analytics SDK of our own.</li>
+    <li>No selling or renting of data, ever.</li>
+    <li>No sharing of your profile or games beyond Google acting as our
+    service provider.</li>
+  </ul>
+
+  <h2>6. How Long Data Is Kept</h2>
+  <p>Your online profile stays until you delete it (see Section 7).
+  Records of online games remain in the database because they are part of
+  your opponent's history too. Once you delete your profile, those records
+  are no longer linked to a profile or to your device. Information stored
+  only on your device stays until you delete it in the App, clear the App's
+  storage, or uninstall the App.</p>
+
+  <h2 id="delete">7. Deleting Your Data</h2>
+  <p><strong>In the App:</strong> open <strong>Settings &rarr; Delete my
+  data</strong>. This deletes your online profile (name, rating and record)
+  and your anonymous sign-in ID from Firebase, and erases all progress
+  stored on your device. It cannot be undone.</p>
+  <p><strong>Other requests:</strong> if you can no longer open the App, or
+  you also want the records of your past online games removed, contact us
+  through the developer contact details on the App's Google Play page, and
+  include the display name you used. We will delete the data within 30 days
+  and confirm by reply.</p>
+  <p>Uninstalling the App removes the data on your device, but
+  <strong>not</strong> your online profile. Use one of the options above
+  for that.</p>
+
+  <h2>8. Google Play Data Safety Summary</h2>
+  <div class="scroll">
+  <table>
+    <tr><th>Data type</th><th>Collected</th><th>Shared</th><th>Purpose</th></tr>
+    <tr><td>Personal info → Name (display name)</td><td class="yes">Yes</td><td class="no">No</td><td>App functionality, account management</td></tr>
+    <tr><td>Device or other IDs: hashed device key and anonymous sign-in ID (us); Advertising ID (Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>App functionality, account management; advertising, fraud prevention</td></tr>
+    <tr><td>Location → Approximate location (from IP, by Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Advertising, fraud prevention</td></tr>
+    <tr><td>App activity → App interactions (ad interactions, by Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Advertising, analytics</td></tr>
+    <tr><td>App activity → Other actions (online game moves and results)</td><td class="yes">Yes</td><td class="no">No</td><td>App functionality</td></tr>
+    <tr><td>App info and performance → Crash logs, diagnostics (by Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Analytics, fraud prevention</td></tr>
+    <tr><td>Contacts, photos, files, audio, messages, financial info, health, web history, precise location</td><td class="no">No</td><td class="no">No</td><td>—</td></tr>
+  </table>
+  </div>
+  <p style="font-size:0.9rem;color:var(--dim)">* Collected by the Google
+  Mobile Ads SDK and processed by Google for advertising.</p>
+  <ul>
+    <li>Data is encrypted in transit: <strong>Yes</strong>.</li>
+    <li>You can request that data be deleted: <strong>Yes</strong>, in the
+    App, or through the developer contact on Google Play (Section 7).</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>Chess Duel is a general-audience game and is not directed at children
+  under 13, and its ads are not configured for children. We do not knowingly collect personal information from children
+  under 13. Because online play shows players' self-chosen names, parents
+  may prefer that younger children stick to the offline modes, which send
+  nothing to our servers. If you believe a child under 13 has created an
+  online profile, contact us through the App's Google Play page and we will
+  delete it.</p>
+
+  <h2>10. Security</h2>
+  <p>We rely on Google Firebase's infrastructure, encryption in transit
+  and server-side security rules to protect data. No method of electronic
+  storage is completely secure, but we keep what we collect to the minimum
+  needed to run the game.</p>
+
+  <h2>11. Your Rights</h2>
+  <p>Depending on where you live, laws such as the GDPR, the UK GDPR and the
+  CCPA give you the right to access, correct, delete or export your personal
+  data, and to object to its processing. You can change your display name
+  in Settings and delete everything with <strong>Delete my data</strong>.
+  For any other request, use the developer contact on the App's Google Play
+  page. We have never sold
+  personal information and do not intend to.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this policy, for example if the App gains new features.
+  Changes will be posted on this page with a new "Last updated" date. If a
+  change affects what we collect, we will also mention it in the App's
+  release notes.</p>
+
+  <div class="contact">
+    <p><strong>Contact</strong></p>
+    <p>Questions about this policy or requests about your data: use the
+    developer contact details on the Chess Duel page in the Google Play
+    Store.</p>
+  </div>
+
+</div>
+</body>
+</html>
