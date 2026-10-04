@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DotRush</title>
+<meta name="description" content="Privacy Policy for the DotRush mobile game.">
+<style>
+  :root {
+    --bg: #f1f0f7;
+    --card: #fbfbfe;
+    --ink: #181b2e;
+    --dim: #676d8c;
+    --accent: #2f6bff;
+    --good: #169a6a;
+    --line: #d9d8e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0f1d;
+      --card: #141930;
+      --ink: #eef0fa;
+      --dim: #99a0c2;
+      --accent: #5ab8ff;
+      --good: #2ee6a6;
+      --line: #2a3257;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 24px 16px 64px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 36px 32px;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; letter-spacing: -0.5px; }
+  .meta { color: var(--dim); font-size: 0.95rem; margin-bottom: 28px; }
+  h2 {
+    font-size: 1.25rem;
+    margin: 30px 0 10px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  p, li { color: var(--ink); margin-bottom: 10px; }
+  ul { padding-left: 22px; margin-bottom: 10px; }
+  a { color: var(--accent); word-break: break-word; }
+  strong { font-weight: 700; }
+  .lede {
+    padding: 16px 18px;
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 9%, transparent);
+    margin-bottom: 8px;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  .scroll { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0 10px;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 9px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--dim); font-weight: 600; font-size: 0.85rem;
+       text-transform: uppercase; letter-spacing: 0.5px; }
+  td.yes { color: var(--accent); font-weight: 700; white-space: nowrap; }
+  td.no { color: var(--good); font-weight: 700; white-space: nowrap; }
+  .contact {
+    margin-top: 30px;
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  @media (max-width: 520px) {
+    .wrap { padding: 26px 20px; border-radius: 14px; }
+    h1 { font-size: 1.55rem; }
+    table { font-size: 0.88rem; }
+    th, td { padding: 8px 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">DotRush &middot; Last updated: October 3, 2026</p>
+
+  <div class="lede">
+    <p><strong>The short version:</strong> DotRush has no in-app purchases
+    and no email or password sign-up. Your progress, settings and stats are
+    saved on your device. If you play online, the name you choose and your
+    moves are shared with the other players in that match through Google
+    Firebase. We use Firebase Analytics and Crashlytics to see which modes are
+    played and to fix crashes, and the App is free because it shows ads from
+    <strong>Google AdMob</strong>. We never sell your data.</p>
+  </div>
+
+  <p>This Privacy Policy explains how the mobile game <strong>DotRush</strong>
+  ("the App", "we", "us") handles information when you use it.</p>
+
+  <h2>1. Information We Collect</h2>
+  <p>We collect only what the App needs to work. We do <strong>not</strong> ask
+  for your real name, email address, phone number, contacts, precise location,
+  photos, files, microphone or camera.</p>
+  <div class="scroll">
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it is kept</th></tr>
+    <tr><td><strong>Player name</strong>: the name you set in the App ("Player" by default). It does not need to be your real name.</td>
+        <td>Shown on your profile, and to the other players in an online match</td>
+        <td>Your device; and Firebase for online matches you join</td></tr>
+    <tr><td><strong>Anonymous sign-in ID</strong>: a random ID issued by Firebase Authentication when you first open Online</td>
+        <td>Letting the server check that only you can act for your seat in a match</td>
+        <td>Firebase</td></tr>
+    <tr><td><strong>Online match records</strong>: room code, seats, each player's name and colour, ready and connection status, "last seen" time, every move and wall placed, and the result</td>
+        <td>Running the match live, rejoining after a disconnect, and detecting when a player has left</td>
+        <td>Firebase Realtime Database</td></tr>
+    <tr><td><strong>Usage events</strong> (Firebase Analytics): for example "game started", the mode and player count, "game completed", "wall placed", "training lesson completed", along with app-instance ID, device model, OS version, language and approximate country</td>
+        <td>Understanding which modes are played so we can improve the game</td>
+        <td>Firebase (Google)</td></tr>
+    <tr><td><strong>Crash reports</strong> (Firebase Crashlytics): stack traces, device model, OS version, free memory and a random installation ID</td>
+        <td>Finding and fixing crashes</td>
+        <td>Firebase (Google)</td></tr>
+  </table>
+  </div>
+  <p>Analytics events never include your player name, room codes or the
+  contents of your matches.</p>
+
+  <h2>2. What the App Stores Only on Your Device</h2>
+  <p>The following stays in your device's standard app storage and is not sent
+  to us:</p>
+  <ul>
+    <li>Settings: sound, music, vibration, animations, game speed, grid style and language</li>
+    <li>Your player name, level and statistics (games, wins, losses, walls placed, center hits, streaks)</li>
+    <li>Training progress and achievements</li>
+    <li>Skins you have unlocked and the ones you use</li>
+    <li>The ID of an online match in progress, so you can rejoin it</li>
+  </ul>
+  <p>Offline, Vs Computer and Training games are played entirely on your
+  device. If your device is connected to the internet, the anonymous usage
+  events, crash reports and ads described in this policy may still be sent
+  while you play them.</p>
+
+  <h2>3. Online Play and Google Firebase</h2>
+  <p>Online play uses <strong>Firebase Authentication</strong> (anonymous
+  sign-in only) and the <strong>Firebase Realtime Database</strong>. Google
+  processes this data on our behalf as a service provider. As with any
+  internet service, Google's servers also receive technical data such as your
+  IP address in order to deliver the service. See
+  <a href="https://firebase.google.com/support/privacy">Firebase Privacy and
+  Security</a> and the <a href="https://policies.google.com/privacy">Google
+  Privacy Policy</a>.</p>
+  <p>All traffic between the App and Firebase is encrypted in transit (TLS).
+  Server security rules make sure only the player in a seat can move for it,
+  that moves are recorded in order, and that nobody can list other people's
+  matches.</p>
+  <p>To keep waiting times short, Quick Match may fill empty seats with
+  computer-controlled players.</p>
+
+  <h2>4. What Other Players Can See</h2>
+  <p>In an online match, the other players see your <strong>player
+  name</strong>, your colour, whether you are ready or connected, and your
+  moves. There is no chat. Please do not use your real full name, or anything
+  else that identifies you, as your player name.</p>
+
+  <h2>5. Advertising (Google AdMob)</h2>
+  <p>The App shows ads served by <strong>Google AdMob</strong>. To deliver,
+  measure and protect ads from fraud, Google may automatically collect from
+  your device:</p>
+  <ul>
+    <li>the Advertising ID (a resettable identifier)</li>
+    <li>your IP address, and an approximate location derived from it</li>
+    <li>device information such as model, operating system and language</li>
+    <li>ad interactions such as views, clicks and completed rewarded videos,
+    plus diagnostic data about ad performance</li>
+  </ul>
+  <p>Google collects this under its own policies; we never receive it. See
+  <a href="https://policies.google.com/technologies/partner-sites">How Google
+  uses information from sites or apps that use its services</a>. We do not
+  send your player name or your matches to the advertising SDK.</p>
+  <p>Ads appear only in these places:</p>
+  <ul>
+    <li>A <strong>banner</strong> at the bottom of the home screens. There is
+    never a banner beside the board while you play.</li>
+    <li>An occasional <strong>full-screen ad</strong> when you return Home
+    after finishing a match (at most once every three matches). Never during a
+    match, and never between losing and pressing "Play Again".</li>
+    <li>An optional <strong>rewarded video</strong> you can choose to watch to
+    unlock a skin before reaching its level. Skins are cosmetic, and nothing in
+    the game requires watching one.</li>
+  </ul>
+  <p><strong>Consent (EEA, UK and Switzerland):</strong> before any ad is
+  requested, the App asks for your consent through Google's User Messaging
+  Platform where the law requires it. You can change your answer later in
+  <strong>Settings &rarr; Privacy Options</strong>.</p>
+  <p><strong>Personalised ads elsewhere:</strong> you can opt out on your
+  device at <strong>Settings &rarr; Google &rarr; Ads &rarr; Delete
+  advertising ID</strong>.</p>
+
+  <h3 style="margin-top:18px">What we do not do</h3>
+  <ul>
+    <li>No in-app purchases or payment data.</li>
+    <li>No selling or renting of data, ever.</li>
+    <li>No sharing of your data beyond Google acting as our service provider
+    and advertising partner, as described above.</li>
+  </ul>
+
+  <h2>6. How Long Data Is Kept</h2>
+  <p>Information stored on your device stays until you clear the App's storage
+  or uninstall it. Online match records stay in the database because they are
+  part of the other players' matches too. You can ask for yours to be removed
+  (see Section 7). Firebase Analytics keeps event data for up to 14 months, and
+  Crashlytics keeps crash reports for 90 days.</p>
+
+  <h2 id="delete">7. Deleting Your Data</h2>
+  <p><strong>On your device:</strong> uninstall the App, or clear its storage
+  in your device settings. This removes your name, settings, stats and
+  progress.</p>
+  <p><strong>Online data:</strong> contact us through the developer contact
+  details on the App's Google Play page and include the player name you used
+  and, if you know it, the room code. We will remove your name from the
+  online match records within 30 days and confirm by reply.</p>
+  <p><strong>Analytics:</strong> you can reset your device's Advertising ID at
+  any time, and analytics data is tied only to an app-instance ID that is
+  removed when you uninstall the App.</p>
+
+  <h2>8. Google Play Data Safety Summary</h2>
+  <div class="scroll">
+  <table>
+    <tr><th>Data type</th><th>Collected</th><th>Shared</th><th>Purpose</th></tr>
+    <tr><td>Personal info &rarr; Name (player name, online matches only)</td><td class="yes">Yes</td><td class="no">No</td><td>App functionality</td></tr>
+    <tr><td>App activity &rarr; Other actions (online moves and results)</td><td class="yes">Yes</td><td class="no">No</td><td>App functionality</td></tr>
+    <tr><td>App activity &rarr; App interactions (usage events; ad interactions, by Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Analytics; advertising</td></tr>
+    <tr><td>Device or other IDs: anonymous sign-in ID, app-instance ID (us); Advertising ID (Google AdMob)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>App functionality, analytics; advertising, fraud prevention</td></tr>
+    <tr><td>Location &rarr; Approximate location (from IP, by Google)</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Analytics; advertising, fraud prevention</td></tr>
+    <tr><td>App info and performance &rarr; Crash logs, diagnostics</td><td class="yes">Yes</td><td class="yes">Yes*</td><td>Analytics, app stability; fraud prevention</td></tr>
+    <tr><td>Contacts, photos, files, audio, messages, financial info, health, web history, precise location</td><td class="no">No</td><td class="no">No</td><td>&mdash;</td></tr>
+  </table>
+  </div>
+  <p style="font-size:0.9rem;color:var(--dim)">* Advertising data is collected
+  by the Google Mobile Ads SDK and processed by Google. Firebase acts as our
+  service provider.</p>
+  <ul>
+    <li>Data is encrypted in transit: <strong>Yes</strong>.</li>
+    <li>You can request that data be deleted: <strong>Yes</strong>, through the
+    developer contact on Google Play (Section 7).</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>DotRush is a general-audience game. It is not directed at children under
+  13, and its ads are not configured for children. We do not knowingly collect
+  personal information from children under 13. Online play shows players'
+  self-chosen names, so parents may prefer that younger children stick to
+  Offline, Vs Computer and Training. If you believe a child under 13 has
+  played online under an identifying name, contact us and we will remove
+  it.</p>
+
+  <h2>10. Security</h2>
+  <p>We rely on Google Firebase's infrastructure, encryption in transit and
+  server-side security rules to protect data. No method of electronic storage
+  is completely secure, but we keep what we collect to the minimum needed to
+  run the game.</p>
+
+  <h2>11. Your Rights</h2>
+  <p>Depending on where you live, laws such as the GDPR, the UK GDPR and the
+  CCPA give you the right to access, correct, delete or export your personal
+  data, and to object to its processing. You can change your player name at
+  any time in your Profile. For anything else, use the developer contact on
+  the App's Google Play page. We have never sold personal information and do
+  not intend to.</p>
+
+  <h2>12. Changes to This Policy</h2>
+  <p>We may update this policy, for example if the App gains new features.
+  Changes will be posted on this page with a new "Last updated" date. If a
+  change affects what we collect, we will also mention it in the App's release
+  notes.</p>
+
+  <div class="contact">
+    <p><strong>Contact</strong></p>
+    <p>Questions about this policy or requests about your data: use the
+    developer contact details on the DotRush page in the Google Play Store.</p>
+  </div>
+
+</div>
+</body>
+</html>
